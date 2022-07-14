@@ -13,29 +13,29 @@ This provides a simple and reasonable estimation of ice thickness that can be us
 ### Creating conda environment (or updating your python setup)
 We encourage you to create a relion_dashboard conda environment that you can use to run this script and others from our repositories (CNIO_RELION_Live_Dashboard & CNIO_RELION_Analyse_Dashboard)
 
-'''
+```
 conda create -n relion_dashboard python=3.8
 conda activate relion_dashboard
 pip install pandas dash=="2.3.1" starfile pathlib2 numpy glob2 pathlib argparse seaborn sklearn regex dash-cytoscape
-'''
+```
 
 ### Clone CNIO_Ctf_Ice_Thickness
-git clone https://github.com/cryoEM-CNIO/CNIO_Ctf_Ice_Thickness
+```git clone https://github.com/cryoEM-CNIO/CNIO_Ctf_Ice_Thickness```
 
 ### Calculate relative ice thickness for each micrograph
 
-Activate conda environment BEFORE opening RELION's GUI
+**1.** Activate conda environment BEFORE opening RELION's GUI
 
-'''
+```
 conda activate relion_dashboard
 
 relion
-'''
+```
 
-Run ice.py as an external job type
+**2.** Run ice.py as an external job type
 
-- Executable: ice.py (provide full path if it is not in your PATH)
-- Input micrograph star file: micrograph_ctf.star (it should be a star file with Ctf information from a CtfFind job!) 
+  - Executable: ice.py (provide full path if it is not in your PATH)
+  - Input micrograph star file: micrograph_ctf.star (it should be a star file with Ctf information from a CtfFind job!) 
 
 Ice thickness estimation is stored in the rlnMicrographIceThickness label
 
