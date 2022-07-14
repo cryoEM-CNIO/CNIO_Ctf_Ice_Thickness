@@ -10,7 +10,7 @@ This provides a simple and reasonable estimation of ice thickness that can be us
 
 ## Installation
 
-## Creating conda environment (or updating your python setup)
+### Creating conda environment (or updating your python setup)
 We encourage you to create a relion_dashboard conda environment that you can use to run this script and others from our repositories (CNIO_RELION_Live_Dashboard & CNIO_RELION_Analyse_Dashboard)
 
 '''
