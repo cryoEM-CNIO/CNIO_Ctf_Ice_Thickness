@@ -28,7 +28,6 @@ pip install pandas dash=="2.3.1" starfile pathlib2 numpy glob2 pathlib argparse 
 
 ```
 conda activate relion_dashboard
-
 relion
 ```
 
